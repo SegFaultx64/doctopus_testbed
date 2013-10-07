@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+	DocumentRoot /var/www
+	
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride All
+	</Directory>
+
+	ErrorLog /var/log/apache2/error.log
+	LogLevel warn
+	CustomLog /var/log/apache2/access.log combined
+</VirtualHost>
